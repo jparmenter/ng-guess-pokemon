@@ -1,0 +1,6 @@
+<h1>Guess that Pokemon?</h1>
+<app-banner image="http://i.imgur.com/J9ynKU9.png" [revealMonster]="false"></app-banner>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+  <input type="text" [formControl]="name">
+  <button type="submit">Next</button>
+</form>
